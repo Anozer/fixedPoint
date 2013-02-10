@@ -1,9 +1,12 @@
 <?php
 	/*
 	 * Sylvain MARIEL (sylvain.mariel@otmax.fr)
-	 * Conversion nombre à virgule fixe/flottante (v1.4)
-	 * Janvier 2013
+	 * Fixed point/floating point conversion (v1.5)
+	 * 2013 February
 	 */
+	 
+	define("PHP_INT_SIZE_OCT", PHP_INT_SIZE*8);
+	define("PHP_INT_HALFSIZE_OCT", PHP_INT_SIZE_OCT/2);
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"> 
@@ -57,41 +60,41 @@
 	<body>
 		<section class="">
 			<form class="form-horizontal">
-				<legend>Conversion flottant (décimal) => virgule fixe (binaire)</legend>
+				<legend>Float (decimal) => Fixed (binary)</legend>
 				<div class="control-group">
-					<label class="control-label" for="nb_input">Nombre (sur 64 bits)</label>
+					<label class="control-label" for="nb_input">Number (on <?php echo PHP_INT_SIZE_OCT; ?> bits)</label>
 					<div class="controls">
 						<input type="text" id="nb_input" placeholder="Ex: -42,75" />
 					</div>
 				</div>
 				
 				<div class="control-group">
-					<label class="control-label" for="fracLen_input">Taille de la partie fractionnaire (0 à 64)</label>
+					<label class="control-label" for="fracLen_input">Fractional part size (0 to <?php echo PHP_INT_SIZE_OCT; ?>)</label>
 					<div class="controls">
-						<input id="fracLen_input" type="range" min="0" max="64" step="1" value="32" /> <span id="range_val">32</span>
+						<input id="fracLen_input" type="range" min="0" max="64" step="1" value="<?php echo PHP_INT_HALFSIZE_OCT; ?>" /> <span id="range_val"><?php echo PHP_INT_HALFSIZE_OCT; ?></span>
 					</div>
 				</div>	
 			</form>
-			<p class="alert alert-info">Résultat : <span id="resultat"></span></p>
+			<p class="alert alert-info">Result : <span id="resultat"></span></p>
 		</section>
 		
 		<section class="">
 			<form class="form-horizontal">
-				<legend>Conversion virgule fixe (binaire) => flottant (décimal)</legend>
+				<legend>Fiexed (binary) => Float (decimal)</legend>
 				<div class="control-group">
-					<label class="control-label" for="bin_input">Nombre à virgule fixe</label>
+					<label class="control-label" for="bin_input">Fixed point number</label>
 					<div class="controls">
 						<input type="text" id="bin_input" placeholder="Ex: 0011,01" />
 					</div>
 				</div>
 			</form>
-			<p class="alert alert-info">Résultat : <span id="resultat_bin"></span></p>
+			<p class="alert alert-info">Result : <span id="resultat_bin"></span></p>
 		</section>
 		
 		<footer>
 			<hr />
 			<p><a class="btn btn-large btn-primary" href="sources.zip"><i class="icon-download icon-white"></i> Sources</a></p>
-			<p>2013 © Sylvain MARIEL et Théo MICHOT</p>
+			<p>2013 © Sylvain MARIEL & Théo MICHOT</p>
 		<footer>
 </body>
 </html>
