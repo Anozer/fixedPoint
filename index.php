@@ -80,7 +80,7 @@
 		
 		<section class="">
 			<form class="form-horizontal">
-				<legend>Fiexed (binary) => Float (decimal)</legend>
+				<legend>Fixed (binary) => Float (decimal)</legend>
 				<div class="control-group">
 					<label class="control-label" for="bin_input">Fixed point number</label>
 					<div class="controls">
