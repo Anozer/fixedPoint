@@ -9,17 +9,17 @@ Converting fixed point number (binary) to floating point number (decimal).
 Using : PHP, HTML5, CSS3, jQuery, Bootstrap
 
 
-
-UI Principle
 ************
+UI Principle
+============
 
 The user modify an input. jQuery intercept the event, and call PHP via ajax methods to compute the new value.
 Style thanks to Bootstrap.
 
 
-
-float to fix principle
 **********************
+float to fix principle
+======================
 
 User give :
   - a floating number on 32 or 64 bits, depending of PHP server
@@ -39,9 +39,9 @@ Then we add the dot (in the ascii string)
   Ex : 00101010.11000000
 
 
-
-fix to float principle
 **********************
+fix to float principle
+======================
 
 User give a fixed point number (the first char represent the sign)
   Ex : 0101010.11 we want --> 42,75
