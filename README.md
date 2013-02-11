@@ -9,9 +9,9 @@ Converting fixed point number (binary) to floating point number (decimal).
 Using : PHP, HTML5, CSS3, jQuery, Bootstrap
 
 
-************
-UI Principle
-============
+***
+UI
+==
 
 The user modify an input. jQuery intercept the event, and call PHP via ajax methods to compute the new value.
 Style thanks to Bootstrap.
