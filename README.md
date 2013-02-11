@@ -1,6 +1,6 @@
 fixedPoint
 ==========
-by Sylvain MARIEL (sylvain.mariel@otmax.fr)
+by Sylvain MARIEL
 
 
 Converting floating point number (decimal) to fixed point number (binary).
