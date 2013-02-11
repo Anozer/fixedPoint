@@ -93,7 +93,7 @@
 		
 		<footer>
 			<hr />
-			<p><a class="btn btn-large btn-primary" href="sources.zip"><i class="icon-download icon-white"></i> Sources</a></p>
+			<p><a class="btn btn-large btn-primary" href="https://github.com/Anozer/fixedPoint/"><i class="icon-download icon-white"></i> Sources</a></p>
 			<p>2013 © Sylvain MARIEL & Théo MICHOT</p>
 		<footer>
 </body>
