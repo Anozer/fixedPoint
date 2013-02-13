@@ -3,9 +3,7 @@ fixedPoint
 by Sylvain MARIEL
 
 
-Converting floating point number (decimal) to fixed point number (binary).
-Converting fixed point number (binary) to floating point number (decimal).
-
+Convert floating point number (decimal) to fixed point number (binary) and vice versa.
 Using : PHP, HTML5, CSS3, jQuery, Bootstrap
 
 
